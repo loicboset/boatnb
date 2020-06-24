@@ -1,0 +1,195 @@
+/* GENERAL SETTINGS */
+
+body {
+	left: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, h2, h3, p, span, div, a, li, ul {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+/* HEADER */
+
+#homepage_header {
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid rgba(200,200,200,0.6);
+}
+
+#homepage_input {
+	border-radius: 20px;
+	border: none;
+	box-shadow: 1px 3px 10px 3px rgba(200,200,200,0.8);
+	display: block;
+	width: 90%;
+	height: 44px;
+}
+
+::placeholder {
+	color: black;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* HOMEPAGE */
+
+#homepage_title {
+	margin-top: 100px;
+	padding: 0 20px;
+	margin-bottom: 36px;
+}
+
+#homepage_title h1 {
+	background: -webkit-linear-gradient(#92174e, #E41D5C);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 400;
+}
+
+/* BOATS LIST */
+
+.card_container {
+	padding: 0 20px;
+	height: 324px;
+	overflow: auto;
+	white-space: nowrap;
+	display: flex;
+}
+
+.cards {
+	height: 271px;
+	width: 272px;
+	box-shadow: 1px 3px 10px 3px rgba(200,200,200,0.8);
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 14px;
+}
+
+.cards_image img {
+	width: 100%;
+	height: 181px;
+	border-radius: 20px 20px 0 0;
+}
+
+.cards_description {
+	padding: 5px 10px;
+	height: 86px;
+}
+
+.cards_title {
+	height: 30%;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.cards_text {
+	height: 70%;
+	white-space: normal;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.cards_new {
+
+}
+
+/* ONLINE EXPERIENCES */
+
+#online_experiences {
+	background-color: black;
+	color: white;
+	padding: 10px 0;
+	height: 620px;
+	margin-bottom: 68px;
+}
+
+#online_experiences h1 {
+	font-size: 22px;
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+#online_exp_top {
+	padding-left: 20px;
+}
+
+#online_experiences p {
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: 300;
+}
+
+.card_cont_exp {
+	height: 455px;
+	padding-left: 20px;
+}
+
+.cards_exp {
+	height: 415px;
+	width: 312px;
+	background-color: #222222;
+	box-shadow: none;
+}
+
+.cards_img_exp img {
+	height: 339px;
+	width: 312px;
+}
+
+.cards_title_exp {
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* FOOTER */
+
+#homepage_footer {
+	background-color: white;
+	padding: 14px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid rgba(200,200,200,0.6);
+}
+
+#homepage_footer a {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer_icons {
+	font-size: 22px;
+	padding-bottom: 4px;
+	color: #878787;
+}
+
+.footer_text {
+	font-size: 10px;
+	color: #878787;
+}
+
+.footer_main {
+	color: #FF5A5F;
+}

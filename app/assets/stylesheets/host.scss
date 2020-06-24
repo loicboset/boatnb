@@ -1,0 +1,135 @@
+// Place all the styles related to the host controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* HEADER */
+
+#header {
+	height: 240px;
+	position: relative;
+	color: white;
+}
+
+.header_img img {
+	height: 240px;
+}
+
+.header_nav {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#header_nav_main_icon {
+	font-size: 30px;
+}
+
+#header h1 {
+	font-size: 34px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-weight: 600;
+}
+
+/* PLACE INFORMATION */
+
+#place_information {
+	padding: 20px;
+}
+
+#place_information h1 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #484848;
+	margin-bottom: 8px;
+}
+
+.button_style {
+	width: 100%;
+	border: 1px solid rgba(200,200,200,0.6);
+	border-radius: 2px;
+	height: 34px;
+	margin-bottom: 8px;
+}
+
+#place_information input {
+	
+}
+
+::placeholder {
+	color: #484848;
+	text-align: left;
+	padding-left: 4px;
+	font-weight: 600;
+}
+
+#place_information select {
+	width: 100%;
+	color: #484848;
+}
+
+#place_information button {
+	background-color: #FF5A5F;
+	color: white;
+	width: 100%;
+	height: 48px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 18px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* MORE INFO */
+
+#more_info {
+	padding: 20px;
+}
+
+.info_container {
+	color: #484848;
+	margin-bottom: 50px;
+}
+
+.info_container h1 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.info_container p {
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
