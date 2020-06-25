@@ -1,0 +1,12 @@
+
+<% if @boat.boat_space == "Entire boat" %>
+	<select class="button_style" name="boat_space">
+		<option value="Entire boat" selected="selected">Entire boat</option>
+		<option value="Shared boat">Shared boat</option>
+	</select>
+<% else %>
+	<select class="button_style" name="boat_space">
+		<option value="Entire boat">Entire boat</option>
+		<option value="Shared boat" selected="selected">Shared boat</option>
+	</select>
+<% end %>

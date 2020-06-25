@@ -10,35 +10,16 @@
 
 <div class="card_container">
 
-	<div class="cards">
-		<div class="cards_image"><%= image_tag "boat.jpg" %></div>
-		<div class="cards_new"></div>
-		<div class="cards_description">
-			<div class="cards_title">Jeanneau 51 at Saint-Tropez</div>
-			<div class="cards_text">Unplug during a weekend on the sea.</div>
+	<% @boats.each do |boat| %>
+		<div class="cards">
+			<div class="cards_image"><%= image_tag(boat.image) if boat.image.attached? %></div>
+			<div class="cards_new"></div>
+			<div class="cards_description">
+				<div class="cards_title"><%= boat.name %> (<%= boat.location %>)</div>
+				<div class="cards_text"><%= boat.description %> (<%= boat.price %>$/day)</div>
+			</div>
 		</div>
-	</div>
-
-	<div class="cards">
-		<div class="cards_image"><%= image_tag "boat2.jpg" %></div>
-		<div class="cards_new"></div>
-		<div class="cards_description">
-			<div class="cards_title">Leader 33 at Isla Nublar</div>
-			<div class="cards_text">Enjoy a nice parasailing
- experience.</div>
-		</div>
-	</div>
-
-	<div class="cards">
-		<div class="cards_image"><%= image_tag "boat2.jpg" %></div>
-		<div class="cards_new"></div>
-		<div class="cards_description">
-			<div class="cards_title">Leader 33 at Isla Nublar</div>
-			<div class="cards_text">Enjoy a nice parasailing
- experience.</div>
-		</div>
-	</div>
-
+	<% end %>
 </div>
 
 <!-- ONLINE EXPERIENCES -->

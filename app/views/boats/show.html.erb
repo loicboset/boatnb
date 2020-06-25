@@ -1,0 +1,23 @@
+<header>
+	<a href="/"><i class="fas fa-anchor"></i></a>
+</header>
+
+<div id="boat_listing">
+	<h1>Let's get your boat listed.</h1>
+
+	<%= form_tag "/boats/#{@boat.id}", method: 'patch', multipart: true do |f| %>
+		<%= render "boats/boat_space" %>
+		<%= render "boats/guests" %>
+		<input class="button_style" type="text" name="location" placeholder=<%= @boat.location %>>
+		<input class="button_style" type="text" name="name" placeholder="Boat name">
+		<input class="button_style" type="text" name="description" placeholder="Description">
+		<input class="button_style" type="integer" name="price" placeholder="Price per day in USD">
+		<div id="boat_image_container">
+			<h2>Now, add your boat image</h2>
+			<input type="file" name="image" id="image">
+		</div>	
+
+		<input class="finish_button button" type="submit" value="Finish">
+	<% end %>
+
+</div>

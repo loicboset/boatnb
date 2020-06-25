@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'host/boats' => 'host#boats'
 
+  post 'boats' => 'boats#create'
+  get 'boats/:id' => 'boats#show'
+  patch 'boats/:id' => 'boats#update'
+
   get 'home/index' => 'home#index'
 
   root 'home#index'
