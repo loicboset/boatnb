@@ -8,7 +8,19 @@
 
 <!-- BOATS LIST -->
 
+<div class="card_container">
 
+	<% @boats.each do |boat| %>
+		<div class="cards">
+			<div class="cards_image"><%= image_tag(boat.image) if boat.image.attached? %></div>
+			<div class="cards_new"></div>
+			<div class="cards_description">
+				<div class="cards_title"><%= boat.name %> (<%= boat.location %>)</div>
+				<div class="cards_text"><%= boat.description %> (<%= boat.price %>$/day)</div>
+			</div>
+		</div>
+	<% end %>
+</div>
 
 <!-- ONLINE EXPERIENCES -->
 
