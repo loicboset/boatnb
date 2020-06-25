@@ -42,7 +42,7 @@ h1, h2, h3, p, span, div, a, li, ul {
 	height: 44px;
 }
 
-::placeholder {
+#homepage_input::placeholder {
 	color: black;
 	text-align: center;
 	font-size: 14px;
